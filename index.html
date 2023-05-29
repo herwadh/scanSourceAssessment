@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Making Mootools and React Talk</title>
+    <!-- lib -->
+    <script src="./old/MooTools.js"></script>
+    <script src="./old/WebComponent.js"></script>
+
+    <!-- old ui code  -->
+    <link rel="stylesheet" href="./old/global.css" />
+  </head>
+  <body>
+    <h1>Making Mootools and React Talk</h1>
+    <div id="content">
+      <div id="new"></div>
+      <div id="old"></div>
+    </div>
+    <script src="https://unpkg.com/react@18.0.0/umd/react.development.js"></script>
+    <script src="https://unpkg.com/react-dom@18.0.0/umd/react-dom.development.js"></script>
+    <script src="./old/MyFunComponent.js"></script>
+    <script src="./NewComponent.js"></script>
+    <script>
+      ReactDOM.render(
+        createElement(NewComponent),
+        document.getElementById("new")
+      );
+    </script>
+  </body>
+</html>
